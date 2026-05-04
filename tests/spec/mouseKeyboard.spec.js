@@ -38,7 +38,7 @@ test("Drag and drop",async({page})=>
     
 
 })
-test.only("Slider",async ({page})=>
+test("Slider",async ({page})=>
 {
     await page.goto("/slider");
     const mouseKeyboard=new MouseKeyboard(page);
@@ -56,4 +56,12 @@ test.only("Slider",async ({page})=>
     ).toBe(beforeSliderValue+1)
     await page.waitForTimeout(2000)
 
+})
+test.only("Keyboard events",async({page})=>
+{
+    await page.goto("https://demoqa.com/automation-practice-form")
+    const mouseKeyboard=new MouseKeyboard(page);
+    await mouseKeyboard.keyActions();
+    await expect(mouseKeyboard.firstname).toHaveValue("Shreya")
+    await page.waitForTimeout(2000)
 })

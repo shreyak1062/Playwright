@@ -1,0 +1,19 @@
+{
+    "firstname":"Johny",
+    "lastname":"Doe",
+    "email":"johndoe@gmail.com",
+    "gender":"Female",
+    "mobileNumber":"9876543210",
+    "subjects":{
+        "subject1":"Math",
+        "subject2":"Physics"
+    },
+    "hobbies":
+    {
+        "hobby1":"Reading",
+        "hobby2":"Music"
+    },
+    "currentAddress":"#402, Brigade Green View Apartments, Whitefield Main Road, Bangalore, Karnataka 560066",
+    "state":"Haryana",
+    "city":"Panipat"
+}
